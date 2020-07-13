@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+    <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="lib/common.js"></script>
+</head>
+<body>
+    <h1>OK</h1>
+    <div class="container">
+        <button type="button" class="btn btn-default" onclick="testParam1()">提交参数1</button>
+    </div>
+
+</body>
+<script>
+    function testParam1() {
+        console.log("ok");
+        ajaxPostJSON({}, "http://localhost:8034/student/cookieTest", function (result) {
+            console.log(result)
+        })
+    }
+</script>
+</html>
