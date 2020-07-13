@@ -11,13 +11,18 @@
     <h1>OK</h1>
     <div class="container">
         <button type="button" class="btn btn-default" onclick="testParam1()">提交参数1</button>
+        <button type="button" class="btn btn-default" onclick="testParam2()">提交参数2</button>
     </div>
 
 </body>
 <script>
     function testParam1() {
-        console.log("ok");
         ajaxPostJSON({}, "http://localhost:8034/student/cookieTest", function (result) {
+            console.log(result)
+        })
+    }
+    function testParam2() {
+        ajaxPostJSON({}, "http://localhost:8034/student/cookieTest2", function (result) {
             console.log(result)
         })
     }
