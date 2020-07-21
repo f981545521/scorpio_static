@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+    <script type="text/javascript" src="../lib/layui/layui.all.js"></script>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../lib/common.js"></script>
+</head>
+<body>
+    <div class="layui-container">
+        <button type="button" class="layui-btn" onclick="sendRequest95()">请求95</button>
+        <button type="button" class="layui-btn" onclick="sendRequest100()">请求100</button>
+    </div>
+</body>
+<script>
+    function sendRequest95() {
+        ajaxPost({}, "http://192.168.1.95:8034/menu/treeAll", function (result) {
+            console.log(result)
+        })
+    }
+    function sendRequest100() {
+        ajaxPost({}, "http://192.168.1.100:7074/menu/treeAll", function (result) {
+            console.log(result)
+        })
+    }
+</script>
+</html>
