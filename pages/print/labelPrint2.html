@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF417 打印</title>
+</head>
+<style type="text/css">
+    @media screen {
+        #print-area {
+            display: none;
+        }
+    }
+
+
+    body {
+        margin: 0;
+    }
+
+    .content {
+        width: 4.2cm;
+        height: 2.8cm;
+        page-break-after: always;
+    }
+
+    .title {
+        height: 0.3cm;
+        line-height: 0.3cm;
+/*
+        font-size: 0.3cm;
+*/
+        margin: 0.1cm;
+        font: 8px PingFangSC-Medium;
+        color: #333;
+    }
+    .sub-title {
+        font-size: 2px;
+        color: #7a8f9a;
+        font-family: Arial,sans-serif;
+        margin-left: 0.1cm;
+    }
+    .image-container{
+        height: 30%;
+    }
+
+    .image-auto {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hiprint-printElement-text-content{
+        background-color: transparent;
+        background-repeat: repeat;
+        padding: 0;
+        border-color: #000;
+        border-style: none;
+        direction: ltr;
+        font-family: simsun;
+        font-size: 9pt;
+        font-style: normal;
+        font-weight: 400;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        text-align: left;
+        text-decoration: none;
+        line-height: 9.75pt;
+        box-sizing: content-box;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+</style>
+<body>
+
+<div class="content">
+    <div>
+        <div class="hiprint-printElement-text-content">货物或应税劳务、服务名称</div>
+        <div class="sub-title">规格：100/50-25/5</div>
+        <div class="sub-title">型号：AF-G型</div>
+        <div class="sub-title">效期：20200827</div>
+    </div>
+</div>
+
+
+<!--<div class="content">
+    <div class="title">罗红霉素</div>
+    <div class="sub-title">规格：100/50-25/5</div>
+    <div class="sub-title">型号：AF-G型</div>
+    <div class="sub-title">效期：20200827</div>
+    <div class="image-container">
+        <img class="image-auto" src="goods_code.png">
+    </div>
+</div>-->
+
+
+
+
+</body>
+</html>
